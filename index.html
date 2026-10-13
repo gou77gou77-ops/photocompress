@@ -1,113 +1,310 @@
-개인정보처리방침
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Photo Compressor</title>
+<style>
+  :root {
+    --bg: #F2F4F6; --card: #FFFFFF; --text: #191F28; --sub: #4E5968;
+    --line: #E5E8EB; --primary: #0B6BFA;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0F1012; --card: #1C1D20; --text: #F2F4F6; --sub: #B0B8C1; --line: #2C2E33; --primary: #64A8FF; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", "Hiragino Sans", "Noto Sans JP", "Segoe UI", Roboto, sans-serif;
+    line-height: 1.7; font-size: 16px; -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  .lang { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+  .lang button {
+    border: 1px solid var(--line); background: var(--card); color: var(--sub);
+    padding: 8px 16px; border-radius: 999px; font-size: 15px; cursor: pointer; font-family: inherit;
+  }
+  .lang button[aria-pressed="true"] { background: var(--primary); border-color: var(--primary); color: #fff; font-weight: 600; }
+  article { background: var(--card); border-radius: 20px; padding: 28px 20px; }
+  @media (min-width: 600px) { article { padding: 40px 36px; } }
+  h1 { font-size: 26px; line-height: 1.35; margin: 0 0 4px; }
+  .date { color: var(--sub); font-size: 14px; margin: 0 0 24px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; padding-top: 24px; border-top: 1px solid var(--line); }
+  p, li { color: var(--text); }
+  ul { padding-left: 20px; margin: 8px 0; }
+  li { margin: 2px 0; }
+  .note { color: var(--sub); font-size: 15px; }
+  a { color: var(--primary); word-break: break-all; }
+  section[hidden] { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="lang" aria-label="Language">
+    <button type="button" data-lang="ko">한국어</button>
+    <button type="button" data-lang="en">English</button>
+    <button type="button" data-lang="ja">日本語</button>
+  </nav>
 
-최종 업데이트: 2026년 7월 15일
+  <article>
+  <!-- ===================== 한국어 ===================== -->
+  <section lang="ko" data-lang="ko" hidden>
+    <h1>개인정보처리방침</h1>
+    <p class="date">시행일: 2026년 10월 13일</p>
+    <p>사진 용량 줄이기(이하 "앱")는 이용자의 개인정보를 소중히 여기며 관련 법령을 준수합니다. 앱의 모든 사진 처리는 이용자의 기기 안에서 이루어지며, 개발자는 이용자의 사진이나 개인정보를 서버로 받지 않습니다.</p>
 
-사진 용량 줄이기 - 이미지 압축 & WebP 변환(이하 "앱")은 이용자의 개인정보를 중요하게 생각하며, 관련 법령을 준수합니다.
+    <h2>1. 수집하는 개인정보</h2>
+    <p>앱은 회원가입이나 로그인을 요구하지 않으며, 개발자는 이름, 이메일, 전화번호, 주소, 계정 정보 등 개인을 식별할 수 있는 정보를 직접 수집하거나 저장하지 않습니다.</p>
+    <p>다만 광고 표시를 위해 Google이 일부 정보를 수집할 수 있습니다(5항 참고).</p>
 
-본 앱은 사진 압축, 이미지 크기 변경, WebP 변환 등의 기능을 제공하며, 대부분의 처리는 사용자의 기기 내에서 이루어집니다.
+    <h2>2. 사진 처리</h2>
+    <ul>
+      <li>이용자가 직접 선택하거나 촬영한 사진만 압축, 크기 변경, 형식 변환, 회전·반전, 자르기에 사용합니다.</li>
+      <li>모든 처리는 기기 안에서 이루어지며, 사진을 개발자 서버나 외부로 전송하지 않습니다.</li>
+      <li>결과물은 기기의 사진 앨범(기본 이름 "PhotoCompressor")에 저장됩니다. 원본 사진은 변경하거나 삭제하지 않습니다.</li>
+      <li>"위치정보(EXIF) 제거" 옵션을 켜면 저장되는 사진에서 촬영 위치 등의 메타데이터를 지웁니다. 이를 위해 앱이 사진의 위치정보 포함 여부를 확인하는 과정도 기기 안에서만 이루어집니다.</li>
+    </ul>
 
-1. 수집하는 개인정보
+    <h2>3. 권한</h2>
+    <ul>
+      <li><strong>사진 선택</strong>: Android 시스템 사진 선택기를 사용하므로 사진 전체에 대한 접근 권한을 요청하지 않으며, 이용자가 고른 사진에만 접근합니다.</li>
+      <li><strong>저장소 쓰기</strong>: Android 9 이하 기기에서 결과물을 저장할 때만 사용합니다.</li>
+      <li><strong>카메라</strong>: 이용자가 사진을 촬영해 바로 압축할 때만 사용합니다.</li>
+    </ul>
 
-본 앱은 회원가입을 요구하지 않습니다.
+    <h2>4. 기기에 저장되는 정보</h2>
+    <p>앱은 편의를 위해 다음 정보를 이용자의 기기에만 저장하며, 서버로 전송하지 않습니다.</p>
+    <ul>
+      <li>마지막으로 사용한 압축 설정과 앱 설정(언어, 화면 테마 등)</li>
+      <li>최근 압축 기록(최대 200건)과 누적 절약 용량 통계</li>
+      <li>중단된 작업을 이어서 하기 위한 진행 정보</li>
+      <li>광고 노출·리뷰 요청 시점을 정하기 위한 사용 횟수</li>
+    </ul>
 
-다음과 같은 개인정보를 직접 수집하거나 저장하지 않습니다.
+    <h2>5. 광고</h2>
+    <p>앱은 Google AdMob을 통해 광고를 표시합니다. 이 과정에서 Google과 광고 파트너가 다음 정보를 수집·이용할 수 있습니다.</p>
+    <ul>
+      <li>광고 식별자(Advertising ID)</li>
+      <li>기기 정보(기기 모델, 운영체제, 언어 등)와 대략적인 위치(IP 주소 기반)</li>
+      <li>광고 노출·클릭 등 앱 사용 정보, 진단 정보</li>
+    </ul>
+    <p>이 정보는 Google의 정책에 따라 처리됩니다.</p>
+    <ul>
+      <li>Google 개인정보처리방침: <a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a></li>
+      <li>Google의 광고 데이터 이용: <a href="https://policies.google.com/technologies/ads" rel="noopener">https://policies.google.com/technologies/ads</a></li>
+    </ul>
+    <p>Android 기기의 <strong>설정 → 개인정보 보호 → 광고</strong>에서 광고 ID를 재설정하거나 삭제할 수 있습니다.</p>
 
-이름
-이메일
-전화번호
-주소
-주민등록번호
-계정 정보
-2. 사진 및 파일 처리
+    <h2>6. 광고 동의 (유럽경제지역·영국·스위스)</h2>
+    <p>유럽경제지역(EEA), 영국, 스위스의 이용자에게는 앱을 처음 실행할 때 Google User Messaging Platform을 통해 광고 맞춤화 등 데이터 이용에 대한 동의를 요청합니다. 동의하지 않아도 앱을 사용할 수 있으며, 앱의 <strong>설정 → 개인정보 옵션</strong>에서 언제든지 선택을 변경할 수 있습니다.</p>
 
-사용자가 선택한 사진은 다음 목적에만 사용됩니다.
+    <h2>7. 이용하는 외부 서비스</h2>
+    <ul>
+      <li>Google AdMob (광고)</li>
+      <li>Google User Messaging Platform (광고 동의)</li>
+      <li>Google Play 인앱 리뷰 (앱 평가 요청. 평가 내용은 Google Play가 처리하며 개발자는 이용자의 개인정보를 받지 않습니다)</li>
+    </ul>
 
-사진 압축
-이미지 크기 변경
-WebP 변환
-포맷 변환
-회전 및 자르기
+    <h2>8. 데이터 삭제</h2>
+    <ul>
+      <li>기기의 <strong>설정 → 애플리케이션 → 사진 용량 줄이기 → 저장공간 → 데이터 삭제</strong>로 앱에 저장된 기록·설정을 모두 지울 수 있습니다. 앱을 삭제해도 함께 지워집니다.</li>
+      <li>압축해서 저장한 사진은 갤러리에서 직접 삭제할 수 있습니다.</li>
+    </ul>
 
-모든 이미지 처리는 사용자의 기기 내에서 수행됩니다.
+    <h2>9. 아동의 개인정보</h2>
+    <p>앱은 만 13세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
 
-앱은 사용자의 사진을 개발자의 서버로 업로드하거나 저장하지 않습니다.
+    <h2>10. 방침의 변경</h2>
+    <p>법령이나 서비스 변경에 따라 이 방침을 수정할 수 있으며, 변경 시 이 페이지에 시행일과 함께 게시합니다.</p>
 
-3. 저장 권한
+    <h2>11. 문의</h2>
+    <p>개인정보 관련 문의는 아래 이메일로 보내 주세요.<br><a href="mailto:gou77gou77@gmail.com">gou77gou77@gmail.com</a></p>
+  </section>
 
-앱은 다음 기능을 위해 저장소 접근 권한을 사용할 수 있습니다.
+  <!-- ===================== English ===================== -->
+  <section lang="en" data-lang="en" hidden>
+    <h1>Privacy Policy</h1>
+    <p class="date">Effective date: October 13, 2026</p>
+    <p>Photo Compressor (the "App") respects your privacy. All photo processing happens on your device, and the developer does not receive your photos or personal information on any server.</p>
 
-사진 선택
-압축된 사진 저장
-변환된 파일 저장
+    <h2>1. Information We Collect</h2>
+    <p>The App does not require sign-up or login. The developer does not directly collect or store information that identifies you, such as your name, email, phone number, address, or account details.</p>
+    <p>Google may collect some information in order to show ads (see Section 5).</p>
 
-사용자가 선택하지 않은 파일에는 접근하지 않습니다.
+    <h2>2. Photo Processing</h2>
+    <ul>
+      <li>Only photos you select or take are used for compressing, resizing, converting, rotating/flipping, and cropping.</li>
+      <li>All processing happens on your device. Photos are never sent to the developer's servers or anywhere else.</li>
+      <li>Results are saved to a photo album on your device (named "PhotoCompressor" by default). Your original photos are never changed or deleted.</li>
+      <li>If you turn on "Remove location (EXIF)", location and other metadata are removed from the saved photos. Checking whether a photo contains location data also happens only on your device.</li>
+    </ul>
 
-4. 광고
+    <h2>3. Permissions</h2>
+    <ul>
+      <li><strong>Photo selection</strong>: The App uses the Android system photo picker, so it does not request access to all your photos. It can only access the photos you choose.</li>
+      <li><strong>Storage (write)</strong>: Used only to save results on devices running Android 9 or earlier.</li>
+      <li><strong>Camera</strong>: Used only when you take a photo to compress right away.</li>
+    </ul>
 
-본 앱은 Google AdMob을 사용하여 광고를 표시할 수 있습니다.
+    <h2>4. Information Stored on Your Device</h2>
+    <p>For convenience, the App stores the following only on your device. None of it is sent to a server.</p>
+    <ul>
+      <li>Your last compression settings and app settings (language, theme, etc.)</li>
+      <li>Recent compression history (up to 200 entries) and total space-saved statistics</li>
+      <li>Progress data used to resume an interrupted job</li>
+      <li>Usage counts used to decide when to show ads or ask for a review</li>
+    </ul>
 
-광고 제공 과정에서 Google 또는 광고 파트너가 다음 정보를 수집할 수 있습니다.
+    <h2>5. Advertising</h2>
+    <p>The App shows ads through Google AdMob. Google and its advertising partners may collect and use:</p>
+    <ul>
+      <li>Advertising ID</li>
+      <li>Device information (model, operating system, language, etc.) and approximate location (based on IP address)</li>
+      <li>App usage information such as ad impressions and clicks, and diagnostic information</li>
+    </ul>
+    <p>This information is handled under Google's policies:</p>
+    <ul>
+      <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a></li>
+      <li>How Google uses information from apps that use its services: <a href="https://policies.google.com/technologies/ads" rel="noopener">https://policies.google.com/technologies/ads</a></li>
+    </ul>
+    <p>You can reset or delete your advertising ID in your Android device's <strong>Settings → Privacy → Ads</strong>.</p>
 
-광고 식별자(Advertising ID)
-기기 정보
-앱 사용 정보
-진단 정보
+    <h2>6. Ad Consent (EEA, UK, and Switzerland)</h2>
+    <p>Users in the European Economic Area, the United Kingdom, and Switzerland are asked for consent to data use, such as ad personalization, through the Google User Messaging Platform when they first open the App. You can use the App without consenting, and you can change your choice at any time in the App under <strong>Settings → Privacy options</strong>.</p>
 
-수집되는 정보는 Google의 개인정보처리방침에 따라 처리됩니다.
+    <h2>7. Third-Party Services</h2>
+    <ul>
+      <li>Google AdMob (ads)</li>
+      <li>Google User Messaging Platform (ad consent)</li>
+      <li>Google Play In-App Review (review requests; reviews are handled by Google Play and the developer does not receive your personal information)</li>
+    </ul>
 
-Google 개인정보처리방침
+    <h2>8. Deleting Your Data</h2>
+    <ul>
+      <li>You can delete all history and settings stored by the App in your device's <strong>Settings → Apps → Photo Compressor → Storage → Clear data</strong>. Uninstalling the App also deletes them.</li>
+      <li>Compressed photos saved to your gallery can be deleted from the gallery.</li>
+    </ul>
 
-https://policies.google.com/privacy
+    <h2>9. Children's Privacy</h2>
+    <p>The App is not directed at children under 13 and does not knowingly collect personal information from children.</p>
 
-Google 광고 정책
+    <h2>10. Changes to This Policy</h2>
+    <p>This policy may be updated due to changes in law or in the App. Updates will be posted on this page with a new effective date.</p>
 
-https://policies.google.com/technologies/ads
+    <h2>11. Contact</h2>
+    <p>For privacy questions, please email:<br><a href="mailto:gou77gou77@gmail.com">gou77gou77@gmail.com</a></p>
+  </section>
 
-5. 제3자 서비스
+  <!-- ===================== 日本語 ===================== -->
+  <section lang="ja" data-lang="ja" hidden>
+    <h1>プライバシーポリシー</h1>
+    <p class="date">施行日：2026年10月13日</p>
+    <p>写真圧縮（以下「本アプリ」）は、利用者のプライバシーを尊重し、関連法令を遵守します。写真の処理はすべて利用者の端末内で行われ、開発者が利用者の写真や個人情報をサーバーで受け取ることはありません。</p>
 
-본 앱은 다음 서비스를 사용할 수 있습니다.
+    <h2>1. 収集する情報</h2>
+    <p>本アプリは会員登録やログインを必要としません。開発者は、氏名、メールアドレス、電話番号、住所、アカウント情報など、個人を特定できる情報を直接収集・保存しません。</p>
+    <p>ただし、広告表示のためにGoogleが一部の情報を収集する場合があります（第5条参照）。</p>
 
-Google AdMob
+    <h2>2. 写真の処理</h2>
+    <ul>
+      <li>利用者が選択または撮影した写真のみを、圧縮、サイズ変更、形式変換、回転・反転、切り抜きに使用します。</li>
+      <li>処理はすべて端末内で行われ、写真を開発者のサーバーや外部に送信することはありません。</li>
+      <li>結果は端末の写真アルバム（既定名「PhotoCompressor」）に保存されます。元の写真を変更・削除することはありません。</li>
+      <li>「位置情報（EXIF）を削除」をオンにすると、保存する写真から撮影場所などのメタデータを削除します。写真に位置情報が含まれているかの確認も端末内でのみ行います。</li>
+    </ul>
 
-각 서비스는 자체 개인정보처리방침을 따릅니다.
+    <h2>3. 権限</h2>
+    <ul>
+      <li><strong>写真の選択</strong>：Androidのシステム写真選択ツールを使用するため、すべての写真へのアクセス権限は要求せず、利用者が選んだ写真にのみアクセスします。</li>
+      <li><strong>ストレージ（書き込み）</strong>：Android 9以前の端末で結果を保存する場合にのみ使用します。</li>
+      <li><strong>カメラ</strong>：写真を撮影してすぐに圧縮する場合にのみ使用します。</li>
+    </ul>
 
-6. 데이터 보관
+    <h2>4. 端末に保存される情報</h2>
+    <p>本アプリは利便性のため、次の情報を利用者の端末内にのみ保存し、サーバーには送信しません。</p>
+    <ul>
+      <li>最後に使用した圧縮設定とアプリ設定（言語、テーマなど）</li>
+      <li>最近の圧縮履歴（最大200件）と削減容量の累計</li>
+      <li>中断した処理を再開するための進行状況</li>
+      <li>広告表示やレビュー依頼のタイミングを決めるための利用回数</li>
+    </ul>
 
-앱은 사용자가 생성한 압축 이미지 및 설정 정보를 사용자의 기기에 저장할 수 있습니다.
+    <h2>5. 広告</h2>
+    <p>本アプリはGoogle AdMobを通じて広告を表示します。その際、Googleおよび広告パートナーが次の情報を収集・利用する場合があります。</p>
+    <ul>
+      <li>広告ID</li>
+      <li>端末情報（機種、OS、言語など）およびおおよその位置（IPアドレスに基づく）</li>
+      <li>広告の表示・クリックなどの利用情報、診断情報</li>
+    </ul>
+    <p>これらの情報はGoogleのポリシーに従って取り扱われます。</p>
+    <ul>
+      <li>Googleプライバシーポリシー：<a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a></li>
+      <li>Googleによる広告データの利用：<a href="https://policies.google.com/technologies/ads" rel="noopener">https://policies.google.com/technologies/ads</a></li>
+    </ul>
+    <p>Android端末の<strong>設定 → プライバシー → 広告</strong>から広告IDをリセットまたは削除できます。</p>
 
-이 데이터는 개발자의 서버로 전송되지 않습니다.
+    <h2>6. 広告に関する同意（欧州経済領域・英国・スイス）</h2>
+    <p>欧州経済領域（EEA）、英国、スイスの利用者には、本アプリの初回起動時にGoogle User Messaging Platformを通じて、広告のパーソナライズなどデータ利用への同意をお願いします。同意しなくても本アプリは利用でき、アプリ内の<strong>設定 → プライバシーオプション</strong>からいつでも選択を変更できます。</p>
 
-7. 데이터 삭제
+    <h2>7. 利用する外部サービス</h2>
+    <ul>
+      <li>Google AdMob（広告）</li>
+      <li>Google User Messaging Platform（広告の同意）</li>
+      <li>Google Play アプリ内レビュー（評価のお願い。評価内容はGoogle Playが処理し、開発者が利用者の個人情報を受け取ることはありません）</li>
+    </ul>
 
-사용자는 언제든지
+    <h2>8. データの削除</h2>
+    <ul>
+      <li>端末の<strong>設定 → アプリ → 写真圧縮 → ストレージ → データを消去</strong>から、本アプリが保存した履歴・設定をすべて削除できます。アプリをアンインストールした場合も削除されます。</li>
+      <li>圧縮して保存した写真はギャラリーから削除できます。</li>
+    </ul>
 
-앱 삭제
-저장된 파일 삭제
+    <h2>9. 子どもの個人情報</h2>
+    <p>本アプリは13歳未満の子どもを対象としておらず、子どもの個人情報を意図的に収集することはありません。</p>
 
-를 통해 데이터를 삭제할 수 있습니다.
+    <h2>10. ポリシーの変更</h2>
+    <p>法令やサービスの変更により本ポリシーを改定する場合があります。改定時は施行日とともにこのページに掲載します。</p>
 
-8. 아동의 개인정보
+    <h2>11. お問い合わせ</h2>
+    <p>プライバシーに関するお問い合わせは、以下のメールアドレスまでお願いします。<br><a href="mailto:gou77gou77@gmail.com">gou77gou77@gmail.com</a></p>
+  </section>
+  </article>
+</div>
 
-본 앱은 만 13세 미만 아동을 대상으로 하지 않습니다.
-
-개인정보를 의도적으로 수집하지 않습니다.
-
-9. 개인정보 보호
-
-앱은 사용자의 사진을 외부 서버로 전송하지 않습니다.
-
-모든 이미지 처리는 가능한 한 기기 내부에서 이루어집니다.
-
-10. 개인정보처리방침 변경
-
-관련 법령 또는 서비스 변경에 따라 본 개인정보처리방침은 수정될 수 있습니다.
-
-변경사항은 최신 버전의 개인정보처리방침을 통해 확인할 수 있습니다.
-
-11. 문의
-
-문의사항이 있는 경우 아래 이메일로 연락해 주세요.
-
-이메일
-
-gou77gou77@gmail.com
+<script>
+(function () {
+  var supported = ['ko', 'en', 'ja'];
+  function pick() {
+    try {
+      var q = new URLSearchParams(location.search).get('lang');
+      if (q && supported.indexOf(q) >= 0) return q;
+    } catch (e) {}
+    var first = ((navigator.languages && navigator.languages[0]) || navigator.language || 'en').toLowerCase();
+    if (first.indexOf('ko') === 0) return 'ko';
+    if (first.indexOf('ja') === 0) return 'ja';
+    return 'en';
+  }
+  function show(lang) {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('section[data-lang]').forEach(function (s) {
+      s.hidden = s.getAttribute('data-lang') !== lang;
+    });
+    document.querySelectorAll('.lang button').forEach(function (b) {
+      b.setAttribute('aria-pressed', b.getAttribute('data-lang') === lang ? 'true' : 'false');
+    });
+    var titles = { ko: '개인정보처리방침 · 사진 용량 줄이기', en: 'Privacy Policy · Photo Compressor', ja: 'プライバシーポリシー · 写真圧縮' };
+    document.title = titles[lang];
+  }
+  document.querySelectorAll('.lang button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var lang = b.getAttribute('data-lang');
+      show(lang);
+      try { history.replaceState(null, '', '?lang=' + lang); } catch (e) {}
+    });
+  });
+  show(pick());
+})();
+</script>
+<noscript><style>section[data-lang] { display: block !important; } .lang { display: none; }</style></noscript>
+</body>
+</html>
